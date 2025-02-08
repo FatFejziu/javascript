@@ -25,14 +25,14 @@ console.log(toC(32))
 
 // var arrowFunction = () => alert("Hello World");
 
-var arrowFunction = () => alert(`Hello ${name}`);
+// var arrowFunction = () => alert(`Hello ${name}`);
 
 arrowFunction("Filan Fisteku");
 
 
 function dsFunction(){
     var localVar = "Digital School"
-    alert(localVar)
+    // alert(localVar)
 }
 // console.log(localVar)
 dsFunction();
@@ -47,3 +47,30 @@ function Surface(h,b){
 }
 
 console.log(Surface(10,5))
+
+
+var car = { name: "Audi", color:"red", year: 2025, km: 0 }
+var car = {
+    name: "Audi",
+    color:"red",
+    year: 2025,
+    km: 0,
+    startEngine : function(){
+        console.log("Vroooooooooooooooooooooooooooooooom!!!")
+    }
+}
+// console.log(car);
+
+console.log(car.name)
+console.log(car.color)
+console.log(car.year)
+console.log(car.km)
+console.log(car.startEngine())
+
+console.log(car['name'])
+console.log(car['color'])
+console.log(car['year'])
+console.log(car['km'])
+
+delete car.name;
+console.log(car)
