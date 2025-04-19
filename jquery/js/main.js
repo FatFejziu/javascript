@@ -18,3 +18,22 @@ console.log($('a.test:first'))
 console.log($('tr:odd'))
 console.log($('tr:even'))
 console.log($('#form:input'))
+
+
+$('li').click(function(){
+    alert("clicked")
+})
+
+//keydown
+//keypress
+//keyup
+//mousover
+//mousout
+//focus
+//resize
+
+$('#btn').click(function(){
+    console.log($('#h1').text())
+    $('#h1').text("New text")
+    $('#h1').append("added")
+})
