@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Shooter Game</title>
+    <!-- Bootstrap CSS for responsive layout -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Custom CSS -->
+</head>
+<body>
+    <div class="container-fluid game-container">
+        <div class="row">
+            <!-- Game canvas will be here -->
+            <div class="col-12 game-board">
+                <canvas id="gameCanvas"></canvas>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white" id="score">Score: 0</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Over Modal -->
+    <div class="modal fade" id="gameOverModal" tabindex="-1" aria-labelledby="gameOverModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="gameOverModalLabel">Game Over</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Your final score is: <span id="finalScore"></span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="restartGame">Restart Game</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery, Bootstrap JS, and custom JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="game.js"></script> <!-- Custom JS for game logic -->
+</body>
+</html>

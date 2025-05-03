@@ -1,0 +1,55 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+}
+
+/* Responsive Game Container */
+.game-container {
+    margin-top: 50px;
+    height: 100vh;
+}
+
+/* Canvas styling for the game */
+.game-board {
+    background-color: #111;
+    border: 2px solid #fff;
+    height: 60vh;
+    position: relative;
+}
+
+#gameCanvas {
+    width: 100%;
+    height: 100%;
+}
+
+/* Text and Score Styling */
+h2 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Game Over Modal Styling */
+.modal-content {
+    background-color: #2d2d2d;
+    color: white;
+}
+
+.modal-header {
+    background-color: #4CAF50;
+}
+
+.modal-footer {
+    background-color: #f1f1f1;
+}
+
+.modal-footer .btn {
+    width: 100%;
+}
